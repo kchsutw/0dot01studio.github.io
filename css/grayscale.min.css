@@ -1,0 +1,562 @@
+/*!
+ * Start Bootstrap - Grayscale v1.1.0 (http://startbootstrap.com/template-overviews/grayscale)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */body, html {
+	height: 100%;
+	width: 100%
+}
+.navbar-custom, body {
+	background-color: #000
+}
+.intro, body, html {
+	width: 100%
+}
+body {
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+	webkit-tap-highlight-color: rgba(255,255,255,.2)
+}
+.btn, .navbar-custom, h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 35px;
+	font-weight: 700;
+	letter-spacing: 1px
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size:18px;
+}
+p {
+	margin: 0 0 25px;
+	font-size: 14px;
+	line-height: 1.5
+}
+a {
+	color: #ff006c;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out
+}
+a:focus, a:hover {
+	text-decoration: none;
+	color: #ffffff;
+}
+.navbar-custom {
+	margin-bottom: 0;
+	border-bottom: 1px solid #ff006c
+}
+.navbar-custom .navbar-toggle {
+	color: #fff;
+	background-color: #ff006c;
+	font-size: 12px
+}
+.navbar-custom .nav li a:active, .navbar-custom .nav li a:focus, .navbar-custom .nav li a:hover {
+	background-color: transparent;
+	outline: 0
+}
+.navbar-custom .navbar-toggle:active, .navbar-custom .navbar-toggle:focus {
+	outline: 0
+}
+.navbar-custom .navbar-brand {
+	font-weight: 700
+}
+.navbar-custom .navbar-brand:focus {
+	outline: 0
+}
+.navbar-custom a {
+	color: #fff
+}
+.navbar-custom .nav li a {
+	-webkit-transition: background .3s ease-in-out;
+	-moz-transition: background .3s ease-in-out;
+	transition: background .3s ease-in-out
+}
+.navbar-custom .nav li a:hover {
+	color: rgba(255,255,255,.8)
+}
+.navbar-custom .nav li.active {
+	outline: 0
+}
+.navbar-custom .nav li.active a {
+	background-color: #ff006c
+}
+.navbar-custom .nav li.active a:hover {
+	color: #fff
+}
+.Movie{
+	display:none;
+}
+#movie-wrap{
+	padding-top:0;
+}
+.BackgroundCover{
+	display:none;
+}
+.DeviceBackground{
+	width:100%;
+	height:100%;
+	position:fixed;
+	background-image:url(../img/intro-bg.jpg);
+	background-size:cover;
+	background-position:center center;
+	display:display;
+}
+.PreBtn {
+	width:40px;
+	height:130px;
+	position:fixed;
+	right:25px;
+	bottom:25px;
+	z-index:99999;
+	cursor:pointer;
+	-o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	animation-iteration-count: infinite;
+}
+.PreBtn:hover {
+	transform:scale(1.1,1.1)
+}
+.Hakkai {
+	width:100%;
+	height:100%;
+	background: url(../img/hakkai-s.png) center center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	position: relative;
+}
+.Party {
+	width:100%;
+	height:100%;
+	background: url(../img/party-s.png) center center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	position: relative;
+}
+.Night {
+	width:100%;
+	height:100%;
+	background: url(../img/night-s.png) center center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	position: relative;
+}
+.Day {
+	width:100%;
+	height:100%;
+	background: url(../img/day-s.png) center center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	position: relative;
+}
+.CharacterMob {
+	width:100%;
+	height:400px;
+	position: relative;
+	background-image:url(../img/cha-bg.png);
+	background-position:center center;
+	background-size:cover;
+}
+.ChaPic img {
+	height:400px;
+}
+.CharacterTop {
+	display:none;
+}
+.Intro {
+	width:100%;
+	height:100%;
+	background: url(../img/intro-s-d.png) center center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	position: relative;
+}
+.Product {
+	width:100%;
+	height:100%;
+	background: url(../img/order-s.png) center center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	position: relative;
+}
+.ChaBtnMob {
+	display: block;
+}
+.ChaBtnTop {
+	display: none !important;
+}
+.MainLogo {
+	display:none;
+}
+
+.ChaPic {
+	display:block;
+	width:100%;
+	height:100%;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	position: relative;
+	top:0;
+	bottom:0;
+}
+.ChaMob00 {
+	background-image:url(../img/ChaTop00.png);
+}
+.ChaMob01 {
+	background-image:url(../img/ChaTop01.png);
+}
+.ChaMob02 {
+	background-image:url(../img/ChaTop02.png);
+}
+.ChaMob03 {
+	background-image:url(../img/ChaTop03.png);
+}
+.ChaMob04 {
+	background-image:url(../img/ChaTop04.png);
+}
+.ChaMob05 {
+	background-image:url(../img/ChaTop05.png);
+}
+.ChaMob06 {
+	background-image:url(../img/ChaTop06.png);
+}
+.ChaMob07 {
+	background-image:url(../img/ChaTop07.png);
+}
+.ChaMob08 {
+	background-image:url(../img/ChaTop08.png);
+}
+.ChaMob09 {
+	background-image:url(../img/ChaTop09.png);
+}
+.ChaMob10 {
+	background-image:url(../img/ChaTop10.png);
+}
+.ChaMob11 {
+	background-image:url(../img/ChaTop11.png);
+}
+.ChaMob12 {
+	background-image:url(../img/ChaTop12.png);
+}
+.ChaMob13 {
+	background-image:url(../img/ChaTop13.png);
+}
+@media (min-width:769px) {
+.navbar-custom {
+	padding: 20px 0;
+	border-bottom: none;
+	letter-spacing: 1px;
+	background: 0 0;
+	-webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+	-moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+	transition: background .5s ease-in-out, padding .5s ease-in-out
+}
+.navbar-custom.top-nav-collapse {
+	padding: 0;
+	background: #000;
+}
+p {
+	margin: 0 0 25px;
+	font-size: 18px;
+	line-height: 1.5
+}
+.Logo {
+	display:none;
+}
+
+.MainLogo {
+	z-index:99999;
+	position: fixed;
+	width:300px;
+	height:150px;
+	left:20px;
+	top:20px;
+	display:block;
+}
+.Hakkai {
+	width:100%;
+	height:100%;
+	background: url(../img/hakkai.png) center center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	position: relative;
+}
+.Party {
+	width:100%;
+	height:100%;
+	background: url(../img/party.png) center center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	position: relative;
+}
+.Night {
+	width:100%;
+	height:100%;
+	background: url(../img/night.png) center center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	position: relative;
+}
+.Day {
+	width:100%;
+	height:100%;
+	background: url(../img/day.png) center center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	position: relative;
+}
+.Intro {
+	width:100%;
+	height:100%;
+	background: url(../img/intro-a.png) center center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	position: relative;
+}
+.Product {
+	width:100%;
+	height:100%;
+	background: url(../img/order.png) center center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	position: relative;
+}
+.PreBtn {
+	width:60px;
+	height:200px;
+}
+
+.CharacterMob {
+	display:none;
+}
+.CharacterTop {
+	width:100%;
+	height:700px;
+	background-image:url(../img/cha-bg.png);
+	background-position:center center;
+	background-size:cover;
+	display:block;
+}
+.ChaPic img {
+	height:700px;
+}
+.ChaBtnMob {
+	display: none !important;
+}
+.ChaBtnTop {
+	display: block !important;
+}
+.ChaTop00 {
+	background-image:url(../img/ChaTop00.png);
+}
+.ChaTop01 {
+	background-image:url(../img/ChaTop01.png);
+}
+.ChaTop02 {
+	background-image:url(../img/ChaTop02.png);
+}
+.ChaTop03 {
+	background-image:url(../img/ChaTop03.png);
+}
+.ChaTop04 {
+	background-image:url(../img/ChaTop04.png);
+}
+.ChaTop05 {
+	background-image:url(../img/ChaTop05.png);
+}
+.ChaTop06 {
+	background-image:url(../img/ChaTop06.png);
+}
+.ChaTop07 {
+	background-image:url(../img/ChaTop07.png);
+}
+.ChaTop08 {
+	background-image:url(../img/ChaTop08.png);
+}
+.ChaTop09 {
+	background-image:url(../img/ChaTop09.png);
+}
+.ChaTop10 {
+	background-image:url(../img/ChaTop10.png);
+}
+.ChaTop11 {
+	background-image:url(../img/ChaTop11.png);
+}
+.ChaTop12 {
+	background-image:url(../img/ChaTop12.png);
+}
+.ChaTop13 {
+	background-image:url(../img/ChaTop13.png);
+}
+}
+@media (min-width:1024px) {
+.DeviceBackground{
+	display:none;
+}
+.Movie{
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	position: fixed;
+	display:block;
+}
+#movie-wrap{
+	padding-top:0;
+}
+.BackgroundCover{
+	background-image:url(../img/onl-movie-cover.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size: cover;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	display:block;
+	position: fixed;
+}	
+}
+.Story {
+	display: table;
+	height: auto;
+	width:100%;
+	height:100%;
+	text-align: center;
+	color: #fff;
+}
+.Story .intro-body {
+	display: table-cell;
+	vertical-align: middle
+}
+.Story .intro-body .intro-text {
+	font-size: 16px;
+	line-height:2em;
+}
+
+
+@-webkit-keyframes pulse {
+0, 100% {
+-webkit-transform:scale(1);
+transform:scale(1)
+}
+50% {
+-webkit-transform:scale(1.2);
+transform:scale(1.2)
+}
+}
+@-moz-keyframes pulse {
+0, 100% {
+-moz-transform:scale(1);
+transform:scale(1)
+}
+50% {
+-moz-transform:scale(1.2);
+transform:scale(1.2)
+}
+}
+.content-section {
+	padding-top: 100px
+}
+.download-section {
+	width: 100%;
+	padding: 50px 0;
+	color: #fff;
+	background: url(../img/downloads-bg.jpg) center center no-repeat #000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover
+}
+
+.btn {
+	font-weight: 400;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	border-radius: 0;
+	margin-top:12px;
+}
+.btn-default {
+	border: 1px solid #ff006c;
+	color: #ff006c;
+	background-color: transparent
+}
+.btn-default:focus, .btn-default:hover {
+	border: 1px solid #ff006c;
+	outline: 0;
+	color: #000;
+	background-color: #ff006c
+}
+ul.banner-social-buttons {
+	margin-top: 0
+}
+
+@media (max-width:1199px) {
+ul.banner-social-buttons {
+	margin-top: 15px
+}
+}
+
+@media (max-width:767px) {
+ul.banner-social-buttons li {
+	display: block;
+	margin-bottom: 20px;
+	padding: 0
+}
+ul.banner-social-buttons li:last-child {
+	margin-bottom: 0
+}
+}
+footer {
+	padding: 50px 0
+}
+footer p {
+	margin: 0
+}
+::-moz-selection {
+text-shadow:none;
+background:#fcfcfc;
+background:rgba(255,255,255,.2)
+}
+::selection {
+	text-shadow: none;
+	background: #fcfcfc;
+	background: rgba(255,255,255,.2)
+}
+img::selection {
+	background: 0 0
+}
+img::-moz-selection {
+background:0 0
+}
