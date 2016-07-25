@@ -385,7 +385,7 @@
                       </select>
                     </div>
                   </div>
-                  <p style="font-size:36px; border:solid #FFFFFF 1px;">總金額：XXXX NTD</p><p>※台灣地區預購免運費</p>
+                  <p style="font-size:36px; border:solid #FFFFFF 1px;">總金額：<span id="sum">0</span> NTD</p><p>※台灣地區預購免運費</p>
                   <p>請將款項轉至：合作金庫銀行 006<br>帳號：0150 872 141369<br>轉帳後請填寫以下欄位</p><p>付款資料</p>
                   <div class="form-group">
                     <label class="control-label col-sm-2" for="email">姓名：</label>
@@ -449,7 +449,7 @@
                   <div class="form-group">
                     <div class=" col-sm-12">
                       <div class="checkbox">
-                        <label><input type="checkbox">我已年滿 18 歲</label>
+                        <label><input id="over18" type="checkbox">我已年滿 18 歲</label>
                       </div>
                     </div>
                   </div>
@@ -535,6 +535,40 @@
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
+    </script>
+
+    <script>
+    $(function(){
+        $('#setcount,#maincount,#spcount').on('change', function(){
+            var sum = 0;
+            sum += $('#setcount').val() * 1169;
+            sum += $('#maincount').val() * 869;
+            sum += $('#spcount').val() * 399;
+            $('#sum').text(sum)
+        });
+        $('[type=submit]').on('click', function(){
+            if(!$('#over18').is(':checked')){
+                alert('18x');
+            }else{
+
+            }
+        });
+    });
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '638170139692579',
+          xfbml      : true,
+          version    : 'v2.7'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/zh_TW/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
     </script>
 
 </body>
